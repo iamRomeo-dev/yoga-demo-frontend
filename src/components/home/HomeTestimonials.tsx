@@ -1,8 +1,9 @@
 "use client";
-import { Quote } from "lucide-react";
+import { ChevronLeftIcon, ChevronRightIcon, Quote } from "lucide-react";
 import { TitleComponent } from "../titles";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { useRef } from "react";
 
 const testimonials = [
   {
@@ -73,12 +74,41 @@ const SingleTestimonial = ({ testimonial }: SingleTestimonialProps) => {
 
 export const HomeTestimonials = () => {
   const { t } = useTranslation();
+  const scrollRef = useRef<HTMLDivElement | null>(null);
+
+  const scroll = (direction: "left" | "right") => {
+    if (!scrollRef.current) return;
+    const { clientWidth } = scrollRef.current;
+    const scrollAmount = clientWidth * 0.8;
+
+    scrollRef.current.scrollBy({
+      left: direction === "left" ? -scrollAmount : scrollAmount,
+      behavior: "smooth",
+    });
+  };
 
   return (
-    <div className="mt-16">
+    <div className="mt-16 overflow-hidden relative">
       <TitleComponent big={t("testimonials")} small={t("testimonialsSub")} />
 
-      <div className="relative flex gap-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory scroll-smooth px-6 sm:px-12 pb-1">
+      <button
+        onClick={() => scroll("left")}
+        className="hidden lg:flex absolute left-0 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 transition"
+      >
+        <ChevronLeftIcon className="h-5 w-5 text-gray-800 dark:text-gray-100" />
+      </button>
+
+      <button
+        onClick={() => scroll("right")}
+        className="hidden lg:flex absolute right-0 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 transition"
+      >
+        <ChevronRightIcon className="h-5 w-5 text-gray-800 dark:text-gray-100" />
+      </button>
+
+      <div
+        ref={scrollRef}
+        className="relative flex gap-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory scroll-smooth px-6 sm:px-12 pb-1"
+      >
         {testimonials.map((testimonial) => (
           <SingleTestimonial
             key={testimonial.author.handle}
