@@ -33,12 +33,6 @@ export const DemoModal = () => {
         <div>
           <p className="text-gray-700  text-sm">{t("demoThreeTitle")}</p>
           <p className="text-gray-700 text-xs">{t("demoThreeSubTitle")}</p>
-          <Link
-            href="https://www.linkedin.com/in/rom%C3%A9o-brilland/"
-            className="cursor-pointer"
-          >
-            <LinkedinIcon className="w-5" />
-          </Link>
 
           <ul className="text-gray-700 text-xs">
             <li>- {t("demoThreeItemFour")}</li>
@@ -52,7 +46,13 @@ export const DemoModal = () => {
         <p className="text-gray-700  text-sm">{t("demoThanks")}</p>
         <p className="text-gray-700 text-sm">{t("demoBye")}</p>
         <p className="text-gray-700 italic text-xs">
-          — {t("demoDeveloppedBy")} Roméo Brilland
+          — {t("demoDeveloppedBy")} Roméo Brilland{" "}
+          <Link
+            href="https://www.linkedin.com/in/rom%C3%A9o-brilland/"
+            className="cursor-pointer"
+          >
+            <LinkedinIcon className="w-5" />
+          </Link>
         </p>
       </div>
     </Modal>
