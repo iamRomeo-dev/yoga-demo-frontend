@@ -5,7 +5,7 @@ interface TitleComponentProps extends React.HTMLAttributes<HTMLSpanElement> {
 
 export const TitleComponent = ({ big, small }: TitleComponentProps) => {
   return (
-    <div className="text-center">
+    <div className="text-center pt-2">
       <h1
         style={{ fontFamily: "Genty, sans-serif" }}
         className="mb-1 font-bold leading-none tracking-tight text-gray-900 text-3xl md:text-5xl"
