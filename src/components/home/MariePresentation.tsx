@@ -61,15 +61,6 @@ export const MariePresentation = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="hidden lg:flex absolute -bottom-10 md:-left-25 w-64 h-64 bg-[#FF751F] rounded-[60%_40%_70%_30%/50%_60%_40%_50%] overflow-hidden">
-              <Image
-                src="/images/smile.jpg"
-                alt="Marie"
-                width={300}
-                height={300}
-                className="w-full h-full object-cover"
-              />
-            </div>
           </div>
         </div>
       </div>
