@@ -7,13 +7,13 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
-import { LogoIcon } from "./Icons";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useTranslation } from "react-i18next";
 import LanguageMenu from "./LanguageMenu";
 import { useEffect, useState } from "react";
 import { Avatar } from "./Avatar";
 import { Error404Page } from "./Error404Page";
+import { FlowerIcon } from "lucide-react";
 
 interface MenuDesktopProps {
   roles: string[];
@@ -38,7 +38,7 @@ const MenuDesktop = ({ roles }: MenuDesktopProps) => {
       <div className="flex lg:flex-1">
         <Link href="/" className="-m-1.5 p-1.5">
           <span className="sr-only">Marie yoga</span>
-          <LogoIcon className="h-12 text-white" />
+          <FlowerIcon className="h-12 text-white" />
         </Link>
       </div>
       <NavigationMenu viewport={false}>

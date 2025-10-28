@@ -122,43 +122,6 @@ export const YogaAllianceIcon: React.FC<ResponsiveMapSVGProps> = (props) => {
   );
 };
 
-export const LogoIcon: React.FC<ResponsiveMapSVGProps> = (props) => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 503 452"
-      role="img"
-      aria-labelledby="titleDesc"
-      {...props}
-    >
-      <title id="titleDesc">Lotus Yoga Logo</title>
-      <defs>
-        <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
-          <stop offset="0" stop-color="#6CC1A1" />
-          <stop offset="1" stop-color="#4A86E8" />
-        </linearGradient>
-      </defs>
-      <rect width="100%" height="100%" fill="none" />
-      <g transform="translate(100,100)" fill="url(#g1)" stroke="none">
-        <path d="M0,-48 C14,-40 28,-28 28,-8 C28,16 0,36 0,36 C0,36 -28,16 -28,-8 C-28,-28 -14,-40 0,-48 Z" />
-        <path
-          d="M-10,-20 C-40,-28 -62,-6 -52,16 C-40,44 -8,34 0,36 C-26,12 -4,-2 -10,-20 Z"
-          opacity="0.95"
-        />
-        <path
-          d="M10,-20 C40,-28 62,-6 52,16 C40,44 8,34 0,36 C26,12 4,-2 10,-20 Z"
-          opacity="0.95"
-        />
-        <path
-          d="M-30,6 C-42,34 -4,50 0,48 C-8,30 -4,18 -30,6 Z"
-          opacity="0.85"
-        />
-        <path d="M30,6 C42,34 4,50 0,48 C8,30 4,18 30,6 Z" opacity="0.85" />
-      </g>
-    </svg>
-  );
-};
-
 export const InstagramIcon: React.FC<ResponsiveMapSVGProps> = (props) => {
   return (
     <svg

@@ -1,4 +1,11 @@
-import { Calendar, Euro, Settings, SquarePlus, UsersRound } from "lucide-react";
+import {
+  Calendar,
+  Euro,
+  FlowerIcon,
+  Settings,
+  SquarePlus,
+  UsersRound,
+} from "lucide-react";
 import {
   SidebarProvider,
   SidebarTrigger,
@@ -12,7 +19,6 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 import Link from "next/link";
-import { LogoIcon } from "./Icons";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
@@ -90,7 +96,7 @@ export function AppSidebar({ roles }: MenuMobileProps) {
           <SidebarGroup>
             <SidebarGroupLabel>
               <Link href="/">
-                <LogoIcon className="text-[#FF751F] w-14" />
+                <FlowerIcon className="text-[#FF751F] w-14" />
               </Link>
             </SidebarGroupLabel>
             <SidebarGroupContent className="mt-6">
@@ -134,7 +140,7 @@ const MenuMobile = ({ roles }: MenuMobileProps) => {
           className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
         >
           <span className="sr-only">Marie yoga</span>
-          <LogoIcon className="h-10 text-white" />
+          <FlowerIcon className="h-10 text-white" />
         </Link>
 
         <SidebarTrigger className="text-white" />
