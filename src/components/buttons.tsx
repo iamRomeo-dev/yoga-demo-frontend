@@ -8,7 +8,7 @@ export const PrimaryButton = ({
   return (
     <button
       className={clsx(
-        "font-lobster items-center justify-center py-2 px-8 font-medium rounded-full border-gray-300 bg-[#FF751F] text-white shadow-sm hover:bg-white hover:text-[#FF751F] cursor-pointer dark:bg-white dark:text-gray-100 dark:hover:bg-gray-50",
+        "font-lobster items-center justify-center py-2 px-8 font-medium rounded-full border-gray-300 bg-[#FF751F] text-white shadow-sm hover:bg-white hover:text-[#FF751F] cursor-pointer",
         className
       )}
       {...props}

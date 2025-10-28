@@ -8,11 +8,11 @@ export const TitleComponent = ({ big, small }: TitleComponentProps) => {
     <div className="text-center">
       <h1
         style={{ fontFamily: "Genty, sans-serif" }}
-        className="mb-2 font-bold leading-none tracking-tight text-gray-900 text-3xl md:text-5xl dark:text-gray-100"
+        className="mb-2 font-bold leading-none tracking-tight text-gray-900 text-3xl md:text-5xl"
       >
         {big}
       </h1>
-      <p className="mb-6 text-sm font-normal text-gray-500 lg:text-mb sm:px-16 xl:px-48 dark:text-gray-100">
+      <p className="mb-6 text-sm font-normal text-gray-500 lg:text-mb sm:px-16 xl:px-48">
         {small}
       </p>
     </div>

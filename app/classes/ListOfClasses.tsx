@@ -17,10 +17,10 @@ export const ListOfClasses = () => {
             key={course._id}
             className="flex flex-col gap-1 border-2 border-white rounded-md p-2 cursor-pointer hover:shadow-xl transform transition-transform duration-300 hover:scale-105"
           >
-            <p className="text-lg font-bold text-gray-700 dark:text-gray-100">
+            <p className="text-lg font-bold text-gray-700">
               {course.name ? course.name : t("toDefine")}
             </p>
-            <p className="font-thin text-xs text-gray-700 dark:text-gray-100">
+            <p className="font-thin text-xs text-gray-700">
               {course.description ? course.description : t("toDefine")}
             </p>
           </Link>

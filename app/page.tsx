@@ -13,12 +13,12 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div>
-      <HeroDesktop className="hidden lg:relative lg:flex lg:h-screen lg:max-h-[600px] lg:overflow-hidden dark:hidden" />
-      <div className="text-center dark:hidden">
+      <HeroDesktop className="hidden lg:relative lg:flex lg:h-screen lg:max-h-[600px] lg:overflow-hidden" />
+      <div className="text-center">
         <HeroMobile className="relative flex h-[500px] overflow-hidden lg:hidden" />
       </div>
       <XpBanner />
-      <div className="mx-auto max-w-7xl pb-16 px-4 xl:px-0 dark:hidden">
+      <div className="mx-auto max-w-7xl pb-16 px-4 xl:px-0">
         <HomePlans />
         <HomeTestimonials />
         <MariePresentation />

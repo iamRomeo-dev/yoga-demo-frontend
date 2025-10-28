@@ -46,7 +46,7 @@ export const MenuHeader = ({ ...props }) => {
   return (
     <nav
       aria-label="Global"
-      className="relative w-full bg-[#FF751F] dark:bg-white"
+      className="relative w-full bg-[#FF751F]"
       {...props}
     >
       <div className="mx-auto flex lg:items-center justify-between p-4 lg:p-2 lg:px-8">

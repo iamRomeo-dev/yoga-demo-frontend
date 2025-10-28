@@ -62,17 +62,17 @@ const SingleClientByClassSuccess = ({
     <div className="flex flex-col gap-1 border-2 border-white rounded-md p-2">
       <Link
         href={`/my-clients/${clientData._id}`}
-        className="text-lg font-bold text-gray-700 dark:text-gray-100 cursor-pointer transform transition-transform duration-300 hover:scale-105"
+        className="text-lg font-bold text-gray-700 cursor-pointer transform transition-transform duration-300 hover:scale-105"
       >
         {clientData.email}
       </Link>
 
       <div className="flex gap-4 items-center">
-        <p className="flex items-center font-thin text-xs text-gray-700 dark:text-gray-100">
+        <p className="flex items-center font-thin text-xs text-gray-700">
           <Crown className="h-4" />
           {remainingSessionsTotalNumber}
         </p>
-        <p className="flex items-center font-thin text-xs text-gray-700 dark:text-gray-100">
+        <p className="flex items-center font-thin text-xs text-gray-700">
           <Euro className="h-4" />
           {clientData.hasToPay}
         </p>
@@ -82,7 +82,7 @@ const SingleClientByClassSuccess = ({
         <div className="flex items-center gap-2 mt-2">
           <label
             htmlFor={`presence-${reservation._id}`}
-            className="font-bold text-xs text-gray-700 dark:text-gray-100"
+            className="font-bold text-xs text-gray-700"
           >
             {reservation.isPresent ? t("present") : t("absent")}
           </label>

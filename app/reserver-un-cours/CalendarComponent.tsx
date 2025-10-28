@@ -58,8 +58,7 @@ export const CalendarComponent = ({
         event: (date: Date) => futureDates.has(date.toDateString()),
       }}
       modifiersClassNames={{
-        event:
-          "bg-amber-200 text-gray-800 font-bold rounded-md dark:bg-gray-50 dark:text-gray-200",
+        event: "bg-amber-200 text-gray-800 font-bold rounded-md",
       }}
     />
   );

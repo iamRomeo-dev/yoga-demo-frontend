@@ -46,7 +46,7 @@ export default function RootLayout({
         )}
       >
         <Providers>
-          <div className="flex flex-col min-h-screen w-full bg-gradient-to-r from-white via-[#fef3c6] to-white dark:bg-white dark:via-white">
+          <div className="flex flex-col min-h-screen w-full bg-gradient-to-r from-white via-[#fef3c6] to-white">
             <header className="fixed top-0 left-0 w-full z-50">
               <AnimatedHeader>
                 <MenuHeader />

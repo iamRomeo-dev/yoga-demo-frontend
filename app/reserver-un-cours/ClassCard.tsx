@@ -15,7 +15,7 @@ export const ClassCard = ({ c, children }: ClassCardProps) => {
         alt="Description"
         width={1000}
         height={200}
-        className="w-28 h-28 object-cover rounded-md dark:hidden"
+        className="w-28 h-28 object-cover rounded-md"
       />
       <div className="flex-1">
         {/* Dot color */}
@@ -24,16 +24,16 @@ export const ClassCard = ({ c, children }: ClassCardProps) => {
           style={{ backgroundColor: c.classType.color }}
         />
         {/* Name */}
-        <p className="text-xl font-extrabold text-gray-700 dark:text-gray-100">
+        <p className="text-xl font-extrabold text-gray-700">
           {c.classType.name}
         </p>
         {/* Description */}
-        <p className="font-thin text-xs text-gray-700 dark:text-gray-100">
+        <p className="font-thin text-xs text-gray-700">
           {c.classType.description}
         </p>
 
         {/* Time */}
-        <div className="flex font-bold text-gray-700 dark:text-gray-100 mt-1 mb-2">
+        <div className="flex font-bold text-gray-700 mt-1 mb-2">
           <p className="text-sm">{`${c.from} - ${c.to}`}</p>
         </div>
 
@@ -43,7 +43,7 @@ export const ClassCard = ({ c, children }: ClassCardProps) => {
 
       {/* Reservation count */}
       <div className="absolute top-2.5 right-2.5 flex items-center gap-2 mb-4">
-        <span className="inline-flex items-center px-2 py-0.5 rounded-md font-medium flex-shrink-0 whitespace-nowrap text-sm bg-amber-100 text-amber-700 dark:bg-white dark:text-gray-100">
+        <span className="inline-flex items-center px-2 py-0.5 rounded-md font-medium flex-shrink-0 whitespace-nowrap text-sm bg-amber-100 text-amber-700">
           {c.reservations.length} / {c.maxPeople}
         </span>
       </div>

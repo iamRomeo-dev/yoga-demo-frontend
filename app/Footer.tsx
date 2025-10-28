@@ -18,7 +18,7 @@ export function Footer() {
     return null;
   }
   return (
-    <footer className="flex flex-col justify-center items-center gap-2 bg-amber-100 text-gray-800 py-3 dark:bg-white dark:text-gray-100">
+    <footer className="flex flex-col justify-center items-center gap-2 bg-amber-100 text-gray-800 py-3">
       <div className="flex gap-6">
         <Link
           href={process.env.NEXT_PUBLIC_INSTAGRAM!}

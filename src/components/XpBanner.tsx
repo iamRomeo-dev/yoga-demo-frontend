@@ -28,7 +28,7 @@ const XpCircle = ({ className, ...props }: XpCircleProps) => {
 export const XpBanner = () => {
   const { t } = useTranslation();
   return (
-    <div className="flex items-center justify-center sm:justify-between bg-[#FF751F] text-white py-2 px-1 dark:hidden">
+    <div className="flex items-center justify-center sm:justify-between bg-[#FF751F] text-white py-2 px-1">
       <XpText title={t("certifiedYogaAlliance")} />
       <XpCircle className="hidden sm:flex" />
       <XpText title={t("XpBannerText2")} className="hidden sm:flex" />

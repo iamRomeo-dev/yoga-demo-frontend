@@ -16,20 +16,12 @@ export const DemoModal = () => {
   }, []);
 
   return (
-    <Modal
-      open={open}
-      onClose={() => setOpen(false)}
-      title="Bienvenue sur une application de test"
-    >
+    <Modal open={open} onClose={() => setOpen(false)} title={t("welcome")}>
       <div className="space-y-4">
-        <p className="text-gray-700  text-sm dark:text-gray-200">
-          {t("demoOne")}
-        </p>
+        <p className="text-gray-700  text-sm">{t("demoOne")}</p>
         <div>
-          <p className="text-gray-700  text-sm dark:text-gray-200">
-            {t("demoTwoTitle")}
-          </p>
-          <ul className="text-gray-700 text-xs dark:text-gray-200">
+          <p className="text-gray-700  text-sm">{t("demoTwoTitle")}</p>
+          <ul className="text-gray-700 text-xs">
             <li>- {t("demoTwoItemOne")}</li>
             <li>- {t("demoTwoItemTwo")}</li>
             <li>- {t("demoTwoItemThree")}</li>
@@ -37,13 +29,9 @@ export const DemoModal = () => {
           </ul>
         </div>
         <div>
-          <p className="text-gray-700  text-sm dark:text-gray-200">
-            {t("demoThreeTitle")}
-          </p>
-          <p className="text-gray-700 text-xs dark:text-gray-200">
-            {t("demoThreeSubTitle")}
-          </p>
-          <ul className="text-gray-700 text-xs dark:text-gray-200">
+          <p className="text-gray-700  text-sm">{t("demoThreeTitle")}</p>
+          <p className="text-gray-700 text-xs">{t("demoThreeSubTitle")}</p>
+          <ul className="text-gray-700 text-xs">
             <li>- {t("demoThreeItemOne")} marie-test@gmail.com</li>
             <li>- {t("demoThreeItemTwo")}</li>
             <li>- {t("demoThreeItemThree")}</li>
@@ -52,20 +40,12 @@ export const DemoModal = () => {
           </ul>
         </div>
         <div>
-          <p className="text-gray-700  text-sm dark:text-gray-200">
-            {t("demoFourTitle")}
-          </p>
-          <p className="text-gray-700 text-xs dark:text-gray-200">
-            {t("demoFourSubTitle")}
-          </p>
+          <p className="text-gray-700  text-sm">{t("demoFourTitle")}</p>
+          <p className="text-gray-700 text-xs">{t("demoFourSubTitle")}</p>
         </div>
-        <p className="text-gray-700  text-sm dark:text-gray-200">
-          {t("demoThanks")}
-        </p>
-        <p className="text-gray-700 text-sm dark:text-gray-200">
-          {t("demoBye")}
-        </p>
-        <p className="text-gray-700 italic text-xs dark:text-gray-200">
+        <p className="text-gray-700  text-sm">{t("demoThanks")}</p>
+        <p className="text-gray-700 text-sm">{t("demoBye")}</p>
+        <p className="text-gray-700 italic text-xs">
           — {t("demoDeveloppedBy")} Roméo Brilland
         </p>
       </div>

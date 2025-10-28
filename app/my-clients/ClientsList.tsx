@@ -21,18 +21,14 @@ const SingleClientCard = ({ client }: SingleClientCardProps) => {
       key={client._id}
       className="flex flex-col gap-1 border-2 border-white rounded-md p-2 cursor-pointer hover:shadow-xl transform transition-transform duration-300 hover:scale-105"
     >
-      <p className="text-lg font-bold text-gray-700 dark:text-gray-100">
-        {client.email}
-      </p>
-      <p className="font-thin text-xs text-gray-700 dark:text-gray-100">
-        {client.lastname}
-      </p>
+      <p className="text-lg font-bold text-gray-700">{client.email}</p>
+      <p className="font-thin text-xs text-gray-700">{client.lastname}</p>
       <div className="flex gap-4 items-center">
-        <p className="flex items-center font-thin text-xs text-gray-700 dark:text-gray-100">
+        <p className="flex items-center font-thin text-xs text-gray-700">
           <Crown className="h-4" />
           {remainingSessionsTotalNumber}
         </p>
-        <p className="flex items-center font-thin text-xs text-gray-700 dark:text-gray-100">
+        <p className="flex items-center font-thin text-xs text-gray-700">
           <Euro className="h-4" />
           {client.hasToPay}
         </p>

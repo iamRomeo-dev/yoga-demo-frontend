@@ -50,20 +50,20 @@ const SingleTestimonial = ({ testimonial }: SingleTestimonialProps) => {
       transition={{ duration: 0.4 }}
       viewport={{ once: true }}
     >
-      <figure className="rounded-2xl bg-gray-50 p-6 text-sm/6 dark:bg-white/[0.025] shadow-md">
-        <span className="inline-flex size-8 items-center justify-center rounded-full bg-amber-100 dark:bg-gray-800">
-          <Quote className="text-gray-800 dark:text-white h-4 w-4" />
+      <figure className="rounded-2xl bg-gray-50 p-6 text-sm/6 shadow-md">
+        <span className="inline-flex size-8 items-center justify-center rounded-full bg-amber-100">
+          <Quote className="text-gray-800 h-4 w-4" />
         </span>
 
-        <blockquote className="mt-2 text-gray-900 dark:text-gray-100">
+        <blockquote className="mt-2 text-gray-900">
           <p>{t(`testimonialsArray.${testimonial.body}`, testimonial.body)}</p>
         </blockquote>
 
         <figcaption className="mt-4">
-          <div className="font-semibold text-gray-900 dark:text-white">
+          <div className="font-semibold text-gray-900">
             {testimonial.author.name}
           </div>
-          <div className="text-gray-600 dark:text-gray-400">
+          <div className="text-gray-600">
             {testimonial.author.handle} {t("years")}
           </div>
         </figcaption>
@@ -93,16 +93,16 @@ export const HomeTestimonials = () => {
 
       <button
         onClick={() => scroll("left")}
-        className="hidden lg:flex absolute left-0 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 transition"
+        className="hidden lg:flex absolute left-0 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white shadow-md hover:bg-gray-100 transition"
       >
-        <ChevronLeftIcon className="h-5 w-5 text-gray-800 dark:text-gray-100" />
+        <ChevronLeftIcon className="h-5 w-5 text-gray-800" />
       </button>
 
       <button
         onClick={() => scroll("right")}
-        className="hidden lg:flex absolute right-0 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 transition"
+        className="hidden lg:flex absolute right-0 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white shadow-md hover:bg-gray-100 transition"
       >
-        <ChevronRightIcon className="h-5 w-5 text-gray-800 dark:text-gray-100" />
+        <ChevronRightIcon className="h-5 w-5 text-gray-800" />
       </button>
 
       <div
