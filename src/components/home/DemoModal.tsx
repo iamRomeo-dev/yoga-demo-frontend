@@ -45,15 +45,17 @@ export const DemoModal = () => {
         </div>
         <p className="text-gray-700  text-sm">{t("demoThanks")}</p>
         <p className="text-gray-700 text-sm">{t("demoBye")}</p>
-        <p className="text-gray-700 italic text-xs">
-          — {t("demoDeveloppedBy")} Roméo Brilland{" "}
+        <div className="flex items-center gap-2">
+          <p className="text-gray-700 italic text-xs">
+            — {t("demoDeveloppedBy")} Roméo Brilland{" "}
+          </p>{" "}
           <Link
             href="https://www.linkedin.com/in/rom%C3%A9o-brilland/"
             className="cursor-pointer"
           >
             <LinkedinIcon className="w-5" />
           </Link>
-        </p>
+        </div>
       </div>
     </Modal>
   );
