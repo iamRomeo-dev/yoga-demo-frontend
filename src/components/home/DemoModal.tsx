@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import Modal from "../Modal";
 import { useTranslation } from "react-i18next";
+import Link from "next/link";
+import { LinkedinIcon } from "../Icons";
 
 export const DemoModal = () => {
   const { t } = useTranslation();
@@ -31,10 +33,14 @@ export const DemoModal = () => {
         <div>
           <p className="text-gray-700  text-sm">{t("demoThreeTitle")}</p>
           <p className="text-gray-700 text-xs">{t("demoThreeSubTitle")}</p>
+          <Link
+            href="https://www.linkedin.com/in/rom%C3%A9o-brilland/"
+            className="cursor-pointer"
+          >
+            <LinkedinIcon className="w-5" />
+          </Link>
+
           <ul className="text-gray-700 text-xs">
-            <li>- {t("demoThreeItemOne")} marie-test@gmail.com</li>
-            <li>- {t("demoThreeItemTwo")}</li>
-            <li>- {t("demoThreeItemThree")}</li>
             <li>- {t("demoThreeItemFour")}</li>
             <li>- {t("demoThreeItemFive")}</li>
           </ul>
